@@ -1,7 +1,7 @@
 {
   "app-id": "io.github.diegoivan.GaticTacToe",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "42",
+  "runtime-version": "43",
   "sdk": "org.gnome.Sdk",
   "command": "gatictactoe",
   "finish-args": [
@@ -30,7 +30,7 @@
         {
           "type": "git",
           "url": "https://github.com/Diego-Ivan/GaticTacToe.git",
-          "commit": "a2e1f4aee8346789377bf96babec32a30275e213"
+          "commit": "a6107b84ed7e075bd48950bd3bed340d696e7fdd"
         }
       ]
     }
