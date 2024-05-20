@@ -1,7 +1,7 @@
 {
   "app-id": "io.github.diegoivan.GaticTacToe",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "43",
+  "runtime-version": "46",
   "sdk": "org.gnome.Sdk",
   "command": "gatictactoe",
   "finish-args": [
@@ -31,6 +31,10 @@
           "type": "git",
           "url": "https://github.com/Diego-Ivan/GaticTacToe.git",
           "commit": "a6107b84ed7e075bd48950bd3bed340d696e7fdd"
+        },
+        {
+          "type": "patch",
+          "path": "fix_appdata.patch"
         }
       ]
     }
