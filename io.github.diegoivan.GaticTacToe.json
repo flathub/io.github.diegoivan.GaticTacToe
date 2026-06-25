@@ -1,42 +1,30 @@
 {
-  "app-id": "io.github.diegoivan.GaticTacToe",
-  "runtime": "org.gnome.Platform",
-  "runtime-version": "49",
-  "sdk": "org.gnome.Sdk",
-  "command": "gatictactoe",
-  "finish-args": [
-    "--share=ipc",
-    "--socket=fallback-x11",
-    "--socket=wayland",
-    "--device=dri"
-  ],
-  "cleanup": [
-    "/include",
-    "/lib/pkgconfig",
-    "/share/pkgconfig",
-    "/man",
-    "/share/doc",
-    "/share/vala",
-    "/share/vala-*",
-    "*.la",
-    "*.a"
-  ],
-  "modules": [
-    {
-      "name": "GaticTacToe",
-      "builddir": true,
-      "buildsystem": "meson",
-      "sources": [
+    "app-id": "io.github.diegoivan.GaticTacToe",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "50",
+    "sdk": "org.gnome.Sdk",
+    "command": "gatictactoe",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=fallback-x11",
+        "--socket=wayland",
+        "--device=dri"
+    ],
+    "modules": [
         {
-          "type": "git",
-          "url": "https://github.com/Diego-Ivan/GaticTacToe.git",
-          "commit": "a6107b84ed7e075bd48950bd3bed340d696e7fdd"
-        },
-        {
-          "type": "patch",
-          "path": "fix_appdata.patch"
+            "name": "GaticTacToe",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/Diego-Ivan/GaticTacToe.git",
+                    "commit": "a6107b84ed7e075bd48950bd3bed340d696e7fdd"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix_appdata.patch"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
